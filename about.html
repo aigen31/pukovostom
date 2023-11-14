@@ -31,15 +31,15 @@
 							Пн-Пт: <span>09:00 - 20:00</span>
 						</p>
 						<p>
-							Суббота: <span>09:00 - 18:00</span>
+							Сб-Вс: <span>09:00 - 18:00</span>
 						</p>
 					</div>
 				</div>
 
 				<div class="col-auto d-md-block d-none">
-					<button class="btn header__btn">
+					<a href="tel:79819961234" class="btn header__btn --callback">
 						Позвонить
-					</button>
+					</a>
 				</div>
 
 				<div class="col-auto d-md-none d-block">
@@ -121,7 +121,7 @@
 				<div class="s-about__btns">
 					<div class="row">
 						<div class="col-md-auto">
-							<a href="#" class="btn s-about__btn">Записаться на консультацию</a>
+							<button class="btn s-about__btn --blue event-modal">Записаться на консультацию</button>
 						</div>
 						<div class="col-md-auto">
 							<img class="s-about__logo" src="images/dist/logo-light.png" alt="">
@@ -223,7 +223,7 @@
 
 		<div class="row justify-content-center">
 			<div class="col-auto">
-				<a href="#" class="btn s-adv__btn">Записаться на консультацию</a>
+				<button href="#" class="btn s-adv__btn --blue event-modal">Записаться на консультацию</button>
 			</div>
 		</div>
 	</div>
@@ -332,9 +332,9 @@
 
 		<div class="row justify-content-center">
 			<div class="col-sm-auto">
-				<a href="#" class="btn s-doctors__btn">
+				<button class="btn s-doctors__btn --blue event-modal">
 					Записаться на консультацию
-				</a>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -554,5 +554,28 @@
 		</div>
 	</footer>
 
+	<section class="s s-callback --modal">
+	<form class="s-callback__form" id="s-callback__form" method="POST">
+		<h2 class="h2 s-callback__h2">
+			БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ ИМПЛАНТОЛОГА И СОСТАВЛЕНИЕ ПЛАНА ЛЕЧЕНИЯ
+		</h2>
+
+		<input type="text" class="s-callback__input" id="name" name="name" required placeholder="ФИО:">
+
+		<input type="tel" class="s-callback__input" id="tel" name="tel" required placeholder="ТЕЛ:">
+
+		<button class="btn s-callback__btn" type="submit" id="callback-button">Записаться на консультацию</button>
+
+		<div class="s-callback__success" id="success">
+			<img src="images/dist/logo-light.png" alt="" class="s-callback__success-logo">
+
+			<img src="images/dist/success.jpg" alt="" class="s-callback__success-img">
+
+			<p class="s-callback__success-text">
+				ВАША ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА,<br> АДМИНИСТРАТОР ПОЗВОНИТ ВАМ В ТЕЧЕНИИ 15 МИНУТ
+			</p>
+		</div>
+	</form>
+</section>
 </body>
 </html>
